@@ -1,0 +1,413 @@
+output/
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:128] successfully opened CUDA library libcurand.so locally
+WARNING:tensorflow:tf.op_scope(values, name, default_name) is deprecated, use tf.name_scope(name, default_name, values)
+WARNING:tensorflow:tf.op_scope(values, name, default_name) is deprecated, use tf.name_scope(name, default_name, values)
+WARNING:tensorflow:From run_model.py:299 in run_training.: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:01:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x1417cde0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:02:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:01:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: GeForce GTX TITAN X, pci bus id: 0000:02:00.0)
+WARNING:tensorflow:From run_model.py:310 in run_training.: __init__ (from tensorflow.python.training.summary_io) is deprecated and will be removed after 2016-11-30.
+Instructions for updating:
+Please switch to tf.summary.FileWriter. The interface and behavior is the same; this is just a rename.
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9842 get requests, put_count=1884 evicted_count=1000 eviction_rate=0.530786 and unsatisfied allocation rate=0.920341
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 2 get requests, put_count=2014 evicted_count=2000 eviction_rate=0.993049 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 18 get requests, put_count=3031 evicted_count=3000 eviction_rate=0.989772 and unsatisfied allocation rate=0.0555556
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 160 to 176
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 17 get requests, put_count=2036 evicted_count=2000 eviction_rate=0.982318 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 17 get requests, put_count=3040 evicted_count=3000 eviction_rate=0.986842 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=6047 evicted_count=6000 eviction_rate=0.992228 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=7050 evicted_count=7000 eviction_rate=0.992908 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9864 get requests, put_count=10175 evicted_count=9000 eviction_rate=0.884521 and unsatisfied allocation rate=0.883921
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 339 to 372
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 0 get requests, put_count=1037 evicted_count=1000 eviction_rate=0.96432 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=3062 evicted_count=3000 eviction_rate=0.979752 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=4066 evicted_count=4000 eviction_rate=0.983768 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=5071 evicted_count=5000 eviction_rate=0.985999 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=7076 evicted_count=7000 eviction_rate=0.989259 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9864 get requests, put_count=9520 evicted_count=8000 eviction_rate=0.840336 and unsatisfied allocation rate=0.851886
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 655 to 720
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 5 get requests, put_count=2077 evicted_count=2000 eviction_rate=0.962927 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=3101 evicted_count=3000 eviction_rate=0.96743 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=5109 evicted_count=5000 eviction_rate=0.978665 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=7117 evicted_count=7000 eviction_rate=0.98356 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 5 get requests, put_count=1120 evicted_count=1000 eviction_rate=0.892857 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=3149 evicted_count=3000 eviction_rate=0.952683 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=6162 evicted_count=6000 eviction_rate=0.97371 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 10 get requests, put_count=1179 evicted_count=1000 eviction_rate=0.848176 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 22 get requests, put_count=4208 evicted_count=4000 eviction_rate=0.95057 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9865 get requests, put_count=10264 evicted_count=7000 eviction_rate=0.681995 and unsatisfied allocation rate=0.689812
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 2253 to 2478
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 12 get requests, put_count=3259 evicted_count=3000 eviction_rate=0.920528 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 3 get requests, put_count=1302 evicted_count=1000 eviction_rate=0.768049 and unsatisfied allocation rate=0
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9864 get requests, put_count=9760 evicted_count=5000 eviction_rate=0.512295 and unsatisfied allocation rate=0.550791
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 3625 to 3987
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 9864 get requests, put_count=10589 evicted_count=5000 eviction_rate=0.472188 and unsatisfied allocation rate=0.473743
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 4385 to 4823
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 0 get requests, put_count=2530 evicted_count=2000 eviction_rate=0.790514 and unsatisfied allocation rate=0
+Load file
+Number of words in the encoder vocabulary is 24682
+Number of words in the decoder vocabulary is 24682
+Init done
+Epoch: 0
+Step 99: loss = 6.71 (57.272 sec)
+Training Data Eval:
+Title is  the the of the of the of the of the of the of the of the of the of the of
+True Summary is  contraception use leads to the degradation of women and their bodies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the the the of the the of the the of the the of the the of the the of the the
+True Summary is  israel blockade allows humanitarian aid into gaza <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the of the of the of the of the of the of the of the of the of the of the
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the the of the of the of the of the of the of the of the of the of the of
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 4.57 (88.507 sec)
+Training Data Eval:
+Title is  the of the of the of the of the of the of the of the of the of the of the
+True Summary is  attempting to alter with drug use the god given human state of mind is immoral <eos> <pad> <pad> <pad> <pad> <pad>
+Title is  the public is not to be a to be a to be a to be a to be a to be
+True Summary is  customers will pay more attention to calorie counts over time <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the of the of the of the of the of the of the of the of the of the of the
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the us would be a to the the of the us <eos> the of the us <eos> the the of the
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:7.05837609333
+Validation Loss:7.7030257225
+Total time:146.10701108
+Epoch: 1
+Step 99: loss = 5.73 (51.234 sec)
+Training Data Eval:
+Title is  the war is not a right to the us <eos> the world <eos> the world <eos> the world <eos> the world
+True Summary is  soviet union demonstrates failures of socialism <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  israel is not a right to israel <eos> israel <eos> israel <eos> <eos> israel <eos> <eos> israel <eos> <eos> israel <eos>
+True Summary is  targeted assassinations disrupt and reduce terrorist attacks <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the ban is not a good for the environment <eos> the environment <eos> <eos> the environment <eos> <eos> the environment <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the government should not be a right to protect the right <eos> <eos> the right <eos> <eos> the right <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 4.02 (81.873 sec)
+Training Data Eval:
+Title is  a ban is a good for a good for a good for a good <eos> a good <eos> a good <eos>
+True Summary is  needle exchanges harm local businesses <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the un is not a right to be a right to be a right to be a right to be a
+True Summary is  affirmative action justly compensates groups for past wrongs <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the public is not a good for a good for a good for the public <eos> a good for the public
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us bailout is a good for the us tax <eos> the us <eos> the us <eos> the us <eos> the us
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:5.78928706031
+Validation Loss:7.58057661057
+Total time:140.238176823
+Epoch: 2
+Step 99: loss = 5.13 (51.405 sec)
+Training Data Eval:
+Title is  the ban is not a good for society <eos> a good for society <eos> the society <eos> the society <eos> the
+True Summary is  inbreeding is unsustainable for society so is bad law <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the military is not a military <eos> military <eos> military <eos> military <eos> military <eos> military <eos> military <eos> military <eos>
+True Summary is  libertarianism contradicts the need for government monopoly of force <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the ban on drugs is a good for the environment <eos> the environment <eos> the environment <eos> the environment <eos> the
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  corporate english should be used to be used to be a right <eos> it <eos> it <eos> it <eos> it <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 3.61 (82.293 sec)
+Training Data Eval:
+Title is  solar energy is a good for wind energy <eos> energy <eos> energy <eos> energy <eos> energy <eos> energy <eos> energy <eos>
+True Summary is  retrieving disintegrated tidal energy parts is problematic <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the u s law is a best for the eu <eos> the state <eos> the state <eos> the world <eos> the
+True Summary is  arab countries not israel keep palestinians in state of limbo <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the public opinion is not a good for the public <eos> a good for the public <eos> a good <eos> public
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us tax cuts should be a good for the tax <eos> the tax <eos> the tax <eos> the tax <eos> the
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:5.1408285015
+Validation Loss:7.84305155277
+Total time:87.9975349903
+Epoch: 3
+Step 99: loss = 4.66 (51.861 sec)
+Training Data Eval:
+Title is  the ban on the ban is not a sense of the world <eos> a major security <eos> the world <eos> a
+True Summary is  corporate spending in elections increases attack ads <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  capitalism is not a right to bear arms <eos> it <eos> it <eos> it <eos> it <eos> it <eos> it <eos>
+True Summary is  voters should be fully empowered to choose primary nominee <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  free trade is not a good for the problem <eos> drug <eos> drug use <eos> drug <eos> drug <eos> drug <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  free speech is not a collective right to free speech <eos> speech <eos> speech <eos> speech <eos> speech <eos> speech <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 3.25 (82.547 sec)
+Training Data Eval:
+Title is  humans are not a good thing <eos> human life <eos> life <eos> life <eos> life <eos> life <eos> life <eos> life
+True Summary is  life is more important than dignity in the case of force feeding anorexics <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  enhanced interrogations were condemned by the death penalty <eos> death <eos> death <eos> death <eos> death <eos> death <eos> death <eos>
+True Summary is  the biblical account of creation flies squarely in the face of macroevolutionism <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the gregorian tax is a good for the public <eos> a good for the public <eos> a good <eos> good <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us stimulus is not a good way to the tax <eos> the tax <eos> the tax <eos> the tax <eos> the
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:4.63746332972
+Validation Loss:8.07741549015
+Total time:88.2643358707
+Epoch: 4
+Step 99: loss = 4.18 (51.836 sec)
+Training Data Eval:
+Title is  iron fertilization can be used to consume illnesses <eos> toxic <eos> toxic <eos> toxic <eos> toxic <eos> toxic <eos> toxic <eos>
+True Summary is  sun tanning can negatively affect human health <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  charter schools can be used to education <eos> education <eos> education <eos> education <eos> education <eos> <eos> education <eos> <eos> education
+True Summary is  obama took significant strides in promoting the arts culture <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  free trade is not a good for good test <eos> drug use <eos> drug phones <eos> illegal <eos> illegal <eos> illegal
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  free speech protects free speech <eos> speech <eos> speech <eos> speech <eos> speech <eos> speech <eos> speech <eos> speech <eos> speech
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.90 (82.644 sec)
+Training Data Eval:
+Title is  a single payer systems are more effective than the public schools <eos> a good investment <eos> a good <eos> private schools
+True Summary is  obama has protected education jobs <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  parents can be trusted to be a child <eos> child <eos> child <eos> child <eos> child <eos> child <eos> child <eos>
+True Summary is  parents have the authority to prevent children from praying <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading is not a good way to pay for their behavior <eos> it <eos> it <eos> it <eos> it <eos> it
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  stimulus is not a good idea for the tax <eos> the tax <eos> the tax <eos> the tax <eos> the tax
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:4.17817762363
+Validation Loss:8.37077991962
+Total time:88.3798558712
+Epoch: 5
+Step 99: loss = 3.69 (52.083 sec)
+Training Data Eval:
+Title is  fairness doctrine does not mean abandoning govt <eos> it <eos> individual judgement <eos> <eos> individual <eos> individual <eos> individual <eos> individual
+True Summary is  linux is not part of the gnu project <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  open primaries allow more productive candidates <eos> more productive <eos> candidates <eos> more popular <eos> popular <eos> college <eos> candidates <eos>
+True Summary is  the electoral college favors the republican party <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  organised condoms are not very good <eos> drug <eos> drug <eos> drug <eos> drug <eos> toxic <eos> toxic <eos> toxic <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the state applies to free speech as speech as an individual right <eos> individual speech <eos> speech <eos> speech <eos> speech
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.58 (83.208 sec)
+Training Data Eval:
+Title is  general statements in the us constitution does not justify human rights <eos> human rights <eos> human rights <eos> human rights <eos>
+True Summary is  bush wrongly created own definition of torture <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  withdrawing from iraq would embolden iraq <eos> iraq <eos> iraq <eos> an independent <eos> the world <eos> the world <eos> the
+True Summary is  withdrawing from iraq would remove the rallying cause of the insurgency <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading is not a good way to pay for the environment <eos> people <eos> <eos> people <eos> <eos> people <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us stimulus is not an tax tax cuts for the tax <eos> the tax <eos> the tax <eos> the tax <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:3.73340935077
+Validation Loss:8.67579174042
+Total time:88.9369111061
+Epoch: 6
+Step 99: loss = 5.20 (58.714 sec)
+Training Data Eval:
+Title is  wikipedia can be ideal <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  commercial lenders charge extremely high interest rates <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  natural gas is a dissipate gas <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  natural gas is less flammable and explosive than other fuels <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the ban is is be <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  speech speech speech speech speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 3.55 (93.648 sec)
+Training Data Eval:
+Title is  the is <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  free trade promotes the most peace and solidarity <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  private competition is not to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  difference b w encouraging foreign industry abroad and protectionism at home <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading only is <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the tax is is not the <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:5.38178952685
+Validation Loss:6.52920315266
+Total time:153.701472044
+Epoch: 7
+Step 99: loss = 4.78 (58.170 sec)
+Training Data Eval:
+Title is  migrant workers would increase the unaccountable <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  welfare systems need protecting from freeriding migrants <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  filibuster will will will will will will <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  detaining ksm after acquittal would undermine justice <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  the ban is is be laws <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  speech speech speech speech speech speech speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 3.24 (93.001 sec)
+Training Data Eval:
+Title is  executions is a a <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  bombing japan was a war crime against humanity <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  trade trade is trade not to to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  there is no evidence that trade with abusers helps to reform society <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading externalities for for <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  bank is tax should not to is <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:4.80870406733
+Validation Loss:6.65107095242
+Total time:98.7455670834
+Epoch: 8
+Step 99: loss = 4.40 (58.476 sec)
+Training Data Eval:
+Title is  primaries are largely parties parties parties parties <eos> parties <eos> parties <eos> <eos> parties <eos> <eos> <eos> parties <eos> <eos> <eos>
+True Summary is  primaries are largely the internal affairs of political parties <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  corporate networking sites are <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  the numbers of tourists will continue to rise due to cheaper travel and greater access to previously closed countries anyway <eos>
+Validation Data Eval:
+Title is  condoms will be be to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  allowing speech speech speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> speech <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 3.02 (93.491 sec)
+Training Data Eval:
+Title is  socialism is not by by <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  progressives wrongly assume wealthy dollars have less utility <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  law law law of law <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  huge variety of legal fields to choose from <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading is lost <eos> to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the should tax not should not be <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:4.4393693786
+Validation Loss:6.79729707241
+Total time:99.2404100895
+Epoch: 9
+Step 99: loss = 4.01 (58.518 sec)
+Training Data Eval:
+Title is  climate change can can t climate change <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  climate change may be inevitable while poverty can be stopped <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  free speech applies applies to rights <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  free speech applies to citizens not govt military <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading troubles troubles troubles phone file file file condom to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  allowing speech speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> speech speech <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.86 (93.429 sec)
+Training Data Eval:
+Title is  the early us not us us for to us for <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while publics do want the us to leave they also express a desire to see a stable iraq <eos> <pad> <pad>
+Title is  it is a drug tax tax <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  it is unfair to tax one product differently than another <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  people is to to the to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the should tax be be not be not <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:4.1158308608
+Validation Loss:6.90236721039
+Total time:99.1413040161
+Epoch: 10
+Step 99: loss = 3.83 (58.742 sec)
+Training Data Eval:
+Title is  the in world will will will <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  no culture in the world can survive in unchanging <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  carbon capture cars are more than carbon sequestration <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  carbon capture and storage cannot scale cost effectivley <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  enforcing enforcing laws are are to and <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.63 (93.454 sec)
+Training Data Eval:
+Title is  guantanamo are are are tortured tortured <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  guantanamo detainees are being tortured <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  oil sands are become to natural to gas <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  oil sands can t compete w cleaner abundant cheaper natural gas <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading can be to to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  the stimulus is is is is tax for tax <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:3.82749522557
+Validation Loss:7.07211322784
+Total time:99.1661398411
+Epoch: 11
+Step 99: loss = 3.38 (58.351 sec)
+Training Data Eval:
+Title is  the is no to expectancy expectancy expectancy <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  gay sodomy is unhealthy and lowers life expectancy <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  old old to to to to to to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  old enough to kill old enough to be held responsible <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  enforcing enforcing laws are are safe to of <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  tech control allows to speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.40 (93.320 sec)
+Training Data Eval:
+Title is  costs of is be be be by by <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  body parts may be cut off while bull is still alive <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  vuvuzelas kangaroos is be humane and and and <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  culling kangaroos is inhumane when humane alternatives exist <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading employees to to to to to to <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us stimulus tax tax is and for to tax <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:3.55813397701
+Validation Loss:7.253713274
+Total time:99.0700099468
+Epoch: 12
+Step 99: loss = 3.12 (58.738 sec)
+Training Data Eval:
+Title is  genetic sequences can be discovered of of <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  gene sequences can be discovered and mapped but not invented <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us can us us of us us us <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  us is capable of deporting all illegal immigrants <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  enforcing free laws laws are safe safe <eos> of <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  resources for regulating trans fats take from other things <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  big govt speech speech speech speech speech speech <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  media speech implicates shareholders no different with other companies <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Step 158: loss = 2.20 (93.684 sec)
+Training Data Eval:
+Title is  government should be accountable accountable individuals accountable themselves <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  people are free moral creatures accountable to nobody but themselves <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  official english does not mean english only <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  official english does not mean english only <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Validation Data Eval:
+Title is  downloading employees to to to to than <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  cell phone use slows driving and causes congestion <eos> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad> <pad>
+Title is  us should not tax be tax the the <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos> <eos>
+True Summary is  while the usa would like to see other international actors be held responsible for not acting during humanitarian crises the <eos>
+Training Loss:3.285882443
+Validation Loss:7.49482111931
+Results are getting no better. Early Stopping
+Test Loss:6.56615884304
