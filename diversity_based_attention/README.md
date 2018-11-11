@@ -33,9 +33,6 @@ The implementation is based on [this](https://arxiv.org/abs/1704.08300) work.
     cat temp_metadata glove.840B.300d.txt > embeddings
     rm temp_metadata
     
- ## Configuration file:
-     * The hyper parameters could be changed in the config.txt file.
-     * The influence of eah hyperarameter have been explained in detail in the comments in config.txt
  ## Train the model
       sh ./train.sh config.txt
       
