@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>IRE Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane-o"></span>
+				<h1>IRE Project</h1>
+				<p>In this project we primarily implemented “Diversity driven Attention Model for <br>
+					Query-based Abstractive Summarization” ACL paper.</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container medium">
+					<h2>INTRODUCTION</h2>
+					<p>The project is to create short summaries <br>
+						for the given documents corresponding to a given query</p>
+					<!--
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					-->
+				</header>
+
+				<div class="box alt container" style="margin-top:-100px">
+					<section class="feature left">
+						<!-- <a href="#" class="image icon fa-signal"><img src="images/pic01.jpg" alt="" /></a> -->
+						<div class="content">
+							<h3>Motivation</h3>
+							<p>The encode-attend-decode paradigm has achieved notable success in machine translation, extractive summarization, dialog systems, etc. But it suffers from the drawback of generation of repeated phrases.</p>
+						</div>
+					<!-- </section> -->
+					<!-- <section class="feature right"> -->
+						<!-- <a href="#" class="image icon fa-code"><img src="images/pic02.jpg" alt="" /></a> -->
+						<div class="content" style="margin-top:-60px">
+							<h3>The Model</h3>
+							<p>Our Model for the query-based summarization task based on the encode-attend-decode paradigm 
+								with two key <b>additions</b></p>
+						</div>
+					</section>
+					<section class="feature left" style="margin-top:-100px">
+						<!-- <a href="#" class="image icon fa-mobile"><img src="images/pic03.jpg" alt="" /></a> -->
+						<div class="content">
+							<h4>Model - Addition 1</h4>
+							<p>A query attention model (in addition to document attention model) which learns to focus on different portions of 
+								the query at different time steps (instead of using a static representation for the query)</p>
+						</div>
+						<div class="content" style="margin-top:-60px">
+							<h4>Model - Addition 2</h4>								
+								<p>A new diversity based attention model which aims to alleviate the problem of repeating phrases in the summary.</p>
+							</div>
+					</section>
+				</div>
+
+
+				<div class="box container">
+					<section>
+							<header>
+								<h3>APPLICATIONS</h3>
+							</header>
+							<ul class="default">
+								<li>It can be used in search engines: When asked a query to the search engine, the most relevant document is
+									fetched and the summary of the document in accordance with the query can be generated as humans do.</li>
+								<li>Useful for Q & A platforms, where the system can answer queries based on relevant tags/sources.</li>
+								<li>There can be multiple such business scenarios where we can feed large documents and then get results.</li>
+							</ul>
+					</section>
+
+				
+					<section>
+						<header>
+							<h3>Model architecture</h3>
+							<p>The Model trained to perform the query-based summarization</p>
+						</header>
+						<p>Given a query q = q<sub>1</sub>, q<sub>2</sub>, ..., q<sub>k</sub> containing k words, a document d = d<sub>1</sub>, 
+							d<sub>2</sub>, ..., d<sub>n</sub> containing n words, the task is to generate a contextual 
+							summary y = y<sub>1</sub>, y<sub>2</sub>, ..., y<sub>m</sub> containing m words.<br>
+							
+							<br> The following figure depicts our model architecture. <br><br>
+
+							<img src="images/ire.png" alt="Model Architecture" class="center">
+
+							We now describe a way of modeling p(y<sub>t</sub> |y<sub>1</sub>, ..., y<sub>t-1</sub>, q, d) using the neural 
+							encoder-attention-decoder paradigm. The proposed model contains the following components: 
+							<ul class="default">
+								<li>An encoder RNN for the query</li> 
+								<li>An encoder RNN for the document</li> 
+								<li>Attention mechanism for the query</li>
+								<li>Attention mechanism for the document</li>
+								<li>A decoder RNN. All the RNNs use a GRU cell</li>
+							</ul>
+							</p>
+					</section>
+
+					<section>
+							<header>
+								<h3>Dataset Used</h3>
+							</header>
+							<p>The dataset is from Debatepedia an encyclopedia of pro and con arguments 
+								and quotes on critical debate topics. There are 663 debates in the corpus 
+								(only those debates are considered which have at least one query with one document). 
+								These 663 debates belong to 53 overlapping categories such as Politics, Law, Crime, 
+								Environment, Health, Morality, Religion, etc. 
+								A given topic can belong to more than one category. For example, the topic 
+								"Eye for an Eye philos.</p>
+							<hr />
+					</section>
+
+
+					<section>
+							<header>
+								<h3>Experimental Setup</h3>
+							</header>
+							<p>We evaluate our models on the dataset described above.
+								<ul class="default" style="margin-top:-20px"></ul>
+								<li>We used 80% of the data for training, 10% for validation and 10% for testing.</li> 
+								<li>We create 10 such folds and report the average Rouge-1, Rouge-2, Rouge-L scores 
+									across the 10 folds. </li>
+								<li>The hyperparameters (batch size and GRU cell sizes) of all the models are tuned on 
+									the validation set.</li> 
+								<li>We tried the following batch sizes : 32, 64 and the following GRU cell sizes 200, 300, 400.</li>
+								<li>We used Adam as the optimization algorithm with the initial learning rate set to 
+									0.0004, β1 = 0.9, β2 = 0.999.</li>
+								<li>We used pre-trained publicly available Glove word embeddings and fine-tuned them during training. 
+									The same word embeddings are used for the query words and the document words.</li>
+								</p>
+							<hr />
+					</section>
+
+					<section>
+						<header>
+							<h3>Scores & Results</h3>
+						</header>
+						<p>We used ROUGE metrics to evaluate our model and we obtain the following rouge scores 
+							evaluated on the test set:</p>
+						<blockquote>
+							<ul style="margin-top:-20px; margin-bottom: -20px">
+								<li>rouge-1:  28.074</li>
+								<li>rouge-2:  2.183	</li>
+								<li>rouge-L:  21.681</li>
+							</ul>
+						</blockquote>
+					</section>
+					
+					<section>
+							<header>
+								<h3>Conclusion</h3>
+							</header>
+							<p>In this project we implemented a query based summarization method. 
+								The model we implemented gives us the flexibility to:
+								<ul class="default">
+									<li>Provide diverse context vectors at successive time steps</li>
+									<li>Pay attention to words repeatedly if need be later in the summary
+										(as opposed to existing models which aggressively delete the 
+										history).</li>
+									<li>We observe that adding an attention mechanism on the query 
+										string gives significant improvements.</li>
+									<li>The model we implemented here can be extended to other NLG tasks
+										like dialog systems and general summarization tasks.</li>
+								</ul>
+							</p>
+							<hr />
+						</section>
+					
+					<section>
+						<header>
+							<h3>Submitted By</h3>
+						</header>
+						<ul class="default">
+							<li>Vikrant Goyal - (201502040)</li>
+							<li>Kushagra Gupta - (20172079)</li>
+							<li>Anudeep PV - (201501130)</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
